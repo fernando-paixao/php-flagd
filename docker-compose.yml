@@ -1,0 +1,14 @@
+version: "3"
+services:
+    flagd:
+        image: ghcr.io/open-feature/flagd:latest
+        ports:
+            - 8013:8013
+        volumes:
+            - ./flags.json:/etc/flags.json
+        command: start --uri file:/etc/flags.json
+
+#docker run --rm -p 8013:8013 \
+#-v $(pwd)/flags.json:/etc/flags.json \
+#ghcr.io/open-feature/flagd:latest \
+#start --uri file:/etc/flags.json --source file

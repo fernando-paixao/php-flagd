@@ -1,0 +1,8 @@
+{
+    "require": {
+        "open-feature/flagd-provider": "^1.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "nyholm/psr7": "^1.8",
+        "http-interop/http-factory-guzzle": "^1.2"
+    }
+}

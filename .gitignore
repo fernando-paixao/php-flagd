@@ -1,0 +1,5 @@
+vendor
+.vscode
+composer.lock
+local.txt
+local.json

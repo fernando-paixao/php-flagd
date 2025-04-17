@@ -1,0 +1,63 @@
+{
+    "flags": {
+        "dev.openfeature.example_flag": {
+            "state": "ENABLED",
+            "defaultVariant": "off",
+            "variants": {
+                "on": true,
+                "off": false
+            },
+            "targets": []
+        },
+        "myObjectFlag": {
+            "state": "ENABLED",
+            "variants": {
+              "object1": {
+                "key": "val"
+              },
+              "object2": {
+                "key": true
+              }
+            },
+            "defaultVariant": "object1"
+        },
+        "isColorYellow": {
+            "state": "ENABLED",
+            "variants": {
+              "on": true,
+              "off": false
+            },
+            "defaultVariant": "off",
+            "targeting": {
+              "if": [
+                {
+                  "==": [
+                    {
+                      "var": ["color"]
+                    },
+                    "yellow"
+                  ]
+                },
+                "on",
+                "off"
+              ]
+            }
+        },
+        "feature-1": {
+          "state": "ENABLED",
+          "defaultVariant": "false",
+          "variants": {
+            "true": true,
+            "false": false
+          },
+          "targeting": {
+            ">=": [
+              {
+                "var": "age"
+              },
+              18
+            ]
+          }
+        }
+    }
+}
