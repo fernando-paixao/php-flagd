@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": ">=8",
         "open-feature/flagd-provider": "^1.0",
         "guzzlehttp/guzzle": "^7.9",
         "nyholm/psr7": "^1.8",
